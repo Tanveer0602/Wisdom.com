@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wisdom of Islam | Sayings Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
+    <div class="aurora aurora-3"></div>
+
+    <header class="hero">
+      <div class="hero__content">
+        <p class="badge">Interactive Collection</p>
+        <h1>Wisdom from Prophet Muhammad ﷺ and the Four Caliphs</h1>
+        <p class="hero__lead">
+          A beautiful, responsive, and searchable showcase of selected wise sayings.
+        </p>
+        <div class="notice">
+          <strong>Note:</strong> This page contains a curated selection, not an exhaustive compilation of every saying.
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="controls glass">
+        <div class="search-wrap">
+          <input id="search" type="text" placeholder="Search by quote, keyword, or narrator..." />
+        </div>
+        <div id="filters" class="filters"></div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Sayings</h2>
+        <div id="quoteGrid" class="quote-grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      Built with love for reflection and learning.
+    </footer>
+
+    <template id="quoteCardTemplate">
+      <article class="quote-card glass">
+        <div class="quote-card__header">
+          <span class="quote-card__author"></span>
+          <span class="quote-card__tag"></span>
+        </div>
+        <p class="quote-card__text"></p>
+      </article>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
